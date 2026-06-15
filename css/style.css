@@ -410,6 +410,7 @@ header {
     transition: top 0.55s cubic-bezier(0.22, 1, 0.36, 1), transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
     transition: top 0.55s cubic-bezier(0.22, 1, 0.36, 1), transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), -webkit-transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: top, transform;
+  align-items: center !important;
     aspect-ratio: 500/1000;
     max-width: 85vw;
     height: 74vh;
