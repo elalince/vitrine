@@ -299,22 +299,27 @@ header {
     max-height: 70%;
   }
   .carousel__item--center {
+    z-index: 5;
     transform: translate3d(-50%, calc(-50% + var(--mobile-swipe-shift)), 0);
   }
   .carousel__item--right-left {
     top: 50%;
-    transform: translate3d(-50%, calc(-60% + var(--mobile-swipe-shift)), 0) skewX(0deg) skewY(0) scale(0.94);
+    z-index: 4;
+    transform: translate3d(-50%, calc(-58% + var(--mobile-swipe-shift)), 0) skewX(0deg) skewY(0) scale(0.92);
   }
   .carousel__item--right-right {
     top: 50%;
-    transform: translate3d(-50%, calc(-64% + var(--mobile-swipe-shift)), 0) skewX(0deg) skewY(0) scale(0.8);
+    z-index: 3;
+    transform: translate3d(-50%, calc(-68% + var(--mobile-swipe-shift)), 0) skewX(0deg) skewY(0) scale(0.8);
   }
   .carousel__item--left-right {
     top: 50%;
-    transform: translate3d(-50%, calc(-54% + var(--mobile-swipe-shift)), 0) skewX(0deg) skewY(0) scale(0.94);
+    z-index: 4;
+    transform: translate3d(-50%, calc(-54% + var(--mobile-swipe-shift)), 0) skewX(0deg) skewY(0) scale(0.92);
   }
   .carousel__item--left-left {
     top: 50%;
+    z-index: 3;
     transform: translate3d(-50%, calc(-50% + var(--mobile-swipe-shift)), 0) skewX(0deg) skewY(0) scale(0.8);
   }
   .carousel img:last-child {
