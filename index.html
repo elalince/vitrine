@@ -19,12 +19,16 @@
 <body>
     <header>
     <div class="header">
-        <div class="logo">
+        <div class="header__left">
+            <div class="logo" id="logoBtn" role="button" tabindex="0" aria-label="Cap Solutions — À propos" title="À propos / About">
             <img src="img/logo.webp">
+            </div>
+            <div class="logo-text" data-i18n="header.logo-text">
+                Cap Solutions
+            </div>
         </div>
-        <div class="logo-text">
-            Cap Solutions
-        </div>
+
+            <button class="resume__btn" id="teamBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3.2"></circle><path d="M2.5 20.5v-1a5 5 0 0 1 5-5h3a5 5 0 0 1 5 5v1"></path><circle cx="17.6" cy="8" r="2.4"></circle><path d="M21.5 20.5v-1a4 4 0 0 0-3-3.87"></path></svg><span id="teamBtnLabel" data-i18n="header.btn">Notre équipe</span></button>
         <div class="lang">
             <a data-lang="fr">FR</a>
             <a data-lang="en">EN</a>
@@ -34,12 +38,7 @@
         <div class="container">
             <div class="carousel">
                 <div class="carousel__item carousel__item--1 carousel__item--main carousel__item--center">
-                        <div class="carousel__item-text carousel__item-text--fr">
-Cloud, Simplifié. <br>Vos données. Partout. Instantanément. <br>Conçu pour la vitesse. Pensé pour <br>l’évolutivité. <br>Le stockage sans complexité. <br>Infrastructure invisible. Possibilités infinies. <br>Un cloud puissant. Une expérience <br>sans effort. <br>Tout est connecté. En toute sécurité.
-                        </div>
-                        <div class="carousel__item-text carousel__item-text--en" style="display: none;">
-Cloud, Simplified. <br>Your data. Everywhere. Instantly. <br>Built for speed. Designed for <br>scalability. <br>Storage without complexity. <br>Invisible infrastructure. Endless <br>possibilities. <br>A powerful cloud. A seamless <br>experience. <br>Everything is connected. Securely.
-                        </div>
+                        <div class="carousel__item-text" data-i18n="hero.text"></div>
                             <img src="img/image-1.webp">
                             <img src="img/image-2.webp">
                 </div>
@@ -68,6 +67,19 @@ Cloud, Simplified. <br>Your data. Everywhere. Instantly. <br>Built for speed. De
         </div>
     <div class="wave wave--1"></div>
     <div class="wave wave--2"></div>
+     <div class="modal" id="modal" hidden>
+  <div class="modal-back" id="modalBack"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheet-head">
+      <button class="sheet-back" id="sheetBack" aria-label="Retour">←</button>
+      <span class="sheet-num" id="sheetNum"></span>
+      <h2 class="sheet-title" id="sheetTitle"></h2>
+      <button class="sheet-close" id="sheetClose" aria-label="Fermer">&times;</button>
+    </div>
+    <div class="sheet-body" id="sheetBody"></div>
+  </div>
+</div>
+
      <footer>
     <script src="js/app.min.js"></script>
 </footer>
