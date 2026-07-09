@@ -898,6 +898,10 @@ header {
   .carousel img:last-child {
     max-width: 33%;
   }
+
+  .carousel__item-text {
+    font-size: 1rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
